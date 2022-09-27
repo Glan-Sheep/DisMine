@@ -1,10 +1,10 @@
-import Amane from "./structures/_Amane.js";
+import DisMine from "./structures/_DisMine.js";
 
 (async () => {
   const checkConfig = await require('./scripts/check-config').run();
 
   if (!checkConfig) {
-    const client = new Amane();
+    const client = new DisMine();
     client.init();
   }
 })();

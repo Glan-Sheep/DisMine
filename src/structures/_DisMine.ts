@@ -13,7 +13,7 @@ const { TOKEN, DEV_API_URL } = process.env;
 //import "./KeepAlive";
 
 //client拡張
-class Amane extends Client {
+class DisMine extends Client {
   slcUtil: Object;
   slashCommands: Collection<string, Object>;
   aliases: Collection<any, any>;
@@ -130,4 +130,4 @@ class Amane extends Client {
   }
 }
 
-export default Amane;
+export default DisMine;
