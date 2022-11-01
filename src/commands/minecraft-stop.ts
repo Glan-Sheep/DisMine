@@ -9,12 +9,11 @@ createCommand({
   execute(): EmbedBuilder {
     exec(`screen -S minecraft_server -X stop`, (err, stdout, stderr) => {
       if (err) {
-      console.log("failed to stop");
+        console.log("failed to stop");
       }
     });
     const embeds = new EmbedBuilder();
-    embeds
-      .setTitle("マイクラサーバーを停止しています...");
+    embeds.setTitle("マイクラサーバーを停止しています...");
     return embeds;
   },
 });

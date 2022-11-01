@@ -9,11 +9,14 @@ createCommand({
   description: "マイクラサーバーを起動します。",
   type: ApplicationCommandTypes.ChatInput,
   execute(): EmbedBuilder {
-    exec(`cd ${env["Minecraft_Folder_Path"]} && screen -UAmdS minecraft_server java -Xmx4G -Xmx4G -jar server.jar`, (err, stdout, stderr) => {
-      if (err) {
-      console.log("failed to start");
+    exec(
+      `cd ${env["Minecraft_Folder_Path"]} && screen -UAmdS minecraft_server java -Xmx4G -Xmx4G -jar server.jar`,
+      (err, stdout, stderr) => {
+        if (err) {
+          console.log("failed to start");
+        }
       }
-    });
+    );
     const embeds = new EmbedBuilder();
     embeds
       .setTitle("マイクラサーバーを起動しています...")
