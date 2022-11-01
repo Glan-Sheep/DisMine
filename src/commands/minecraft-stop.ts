@@ -3,8 +3,8 @@ import { createCommand } from "./mod.ts";
 import { EmbedBuilder } from "../lib/mod.ts";
 
 createCommand({
-  name: "minecraft run",
-  description: "マイクラサーバーを起動します。",
+  name: "minecraft stop",
+  description: "マイクラサーバーを停止します。",
   type: ApplicationCommandTypes.ChatInput,
   execute(): EmbedBuilder {
     exec(`screen -S minecraft_server -X stop`, (err, stdout, stderr) => {
