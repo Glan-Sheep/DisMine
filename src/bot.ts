@@ -30,6 +30,6 @@ export interface BotClient extends BotWithCache<BotWithHelpersPlugin> {
   commands: Collection<string, Command>;
 }
 
-export const Amane = bot as BotClient;
+export const DisMine = bot as BotClient;
 
-Amane.commands = new Collection();
+DisMine.commands = new Collection();
