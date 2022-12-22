@@ -5,7 +5,7 @@ import { EmbedBuilder } from "../lib/mod.ts";
 const env = config();
 
 createCommand({
-  name: "minecraft run",
+  name: "minecraft-run",
   description: "マイクラサーバーを起動します。",
   type: ApplicationCommandTypes.ChatInput,
   execute(): EmbedBuilder {

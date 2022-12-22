@@ -3,7 +3,7 @@ import { createCommand } from "./mod.ts";
 import { EmbedBuilder } from "../lib/mod.ts";
 
 createCommand({
-  name: "minecraft stop",
+  name: "minecraft-stop",
   description: "マイクラサーバーを停止します。",
   type: ApplicationCommandTypes.ChatInput,
   execute(): EmbedBuilder {
