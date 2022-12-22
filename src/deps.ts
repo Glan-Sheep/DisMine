@@ -8,4 +8,4 @@ export * from "https://deno.land/x/discordeno@17.0.0/plugins/cache/mod.ts";
 export * from "https://deno.land/x/discordeno@17.0.0/plugins/helpers/mod.ts";
 export * from "https://deno.land/x/discordeno@17.0.0/plugins/permissions/mod.ts";
 export * from "https://deno.land/x/axiod@0.26.2/mod.ts";
-export * from "https://deno.land/std@0.161.0/node/child_process.ts";
+export * from "https://deno.land/std@0.170.0/node/child_process.ts";
