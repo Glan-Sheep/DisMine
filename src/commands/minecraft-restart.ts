@@ -6,8 +6,8 @@ import log from "../utils/logger.ts";
 const env = config();
 
 createCommand({
-  name: "minecraft-run",
-  description: "マイクラサーバーを起動します。",
+  name: "minecraft-restart",
+  description: "マイクラサーバーを再起動します。",
   type: ApplicationCommandTypes.ChatInput,
   execute(): EmbedBuilder {
     exec(`cd ${env["Minecraft_Folder_Path"]} && screen -UAmdS minecraft_server java -Xmx8G -Xmx8G -jar server.jar`, (err, stdout, stderr) => {
